@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Ferfem :3!!!</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .intro {
+            background-color: #567c9b;
+            border: 10px solid #363641;
+            padding: 10px;
+            width: 40%; /* Adjust width as needed */
+            float: left;
+            height: 325px;
+        }
+    
+        .forms {
+            background-color: #567c9b;
+            border: 10px solid #363641;
+            padding: 10px;
+            margin-left: 44%;
+            width: 50%;
+        }
+
+        .aboutme {
+            background-color: #567c9b;
+            border: 10px solid #363641;
+            padding: 10px;
+            width: auto;
+            height: 300px;
+        }
+        
+        .container {
+            width: 100%;
+            height: 340px;
+            margin: auto;
+            padding: 10px;
+        }
+        .aboutsub{
+            padding: 10px;
+            width: auto;
+            height: auto;
+            padding: 30px;
+            border: 10px solid #25252c;
+            background-image: url(Assets/istockphoto-1266607345-612x612.jpg);
+            margin: auto;
+            text-align: center;
+            font: bolder;
+            text-decoration: wavy;
+            color: #ffffff;
+            font-size: x-large;
+        }
+        .subs {
+            padding: 10px;
+            width: auto;
+            height: auto;
+            padding: 10px;
+            border: 10px solid #25252c;
+            background-color: #2c6797;
+            margin: auto;
+            text-align: center;
+        }
+    </style>
+
+</head>
+<body style="background-color:#040018;">
+    <div class = "subs">
+        <img src ="Assets/cooltext473719429354401.gif" alt = "Logo"><br>
+    </div>
+    <section class = "container">
+        <div class = "intro">
+            <h2><b>What is this site?</b></h2>
+            <p>This project is made by me (thecircuitkid) to learn html and frontend development. I also just want to be able to show off and try make something good. Please look around and interact with my inputs. :3</p>
+            <br><br><br>
+            <h2 style = "font-size: medium;">What's your faveourite tv show!</h2>
+            <form name = "data collection" netlify>
+                <label for "tvshow">Answer:</label><br>
+                <input type = "text" id = "tvshow" name = "tvshow"><br>
+                <input type = "submit" value = "Submit">
+            </form>
+        </div>
+
+        <div class = "forms"><h2><b>Form Test:</b></h2>
+            <form name = "form test" netlify>
+                <h5>What is your discord user?</h5>
+                <label for "User"> User:</label><br>
+                <input type = "text" id = "User" name = "User"><br><br>
+                <h5>Where did you access this link from?</h5>
+                <label for "discord">Discord:</label>
+                <input type = "radio" id = "disc" name = "origin"><br>
+                <label for "tumblr">Tumblr:</label>
+                <input type = "radio" id = "tumblr" name = "origin"><br>
+                <label for "other"> Other:</label>
+                <input type = "text" id = "other" name = "origin"><br><br>
+                <input type="submit" value="Submit">
+            </form>
+        </div>
+<!--    </section><br><br><br>
+    <centre>
+        <div class = "aboutsub">
+            <h2>
+                About Me:
+            </h2>
+        </div>
+    </centre><br><br><br><br>-->
+    <br><br><div class ="aboutme">
+        <button type = "button" onclick = "alert(`BOO!      Did I scare you?`)">Click me!</button>
+    </div>
+
+
+</body>
+</html>
