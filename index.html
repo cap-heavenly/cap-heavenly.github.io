@@ -10,7 +10,7 @@
             background-color: #567c9b;
             border: 10px solid #363641;
             padding: 10px;
-            width: 40%; /* Adjust width as needed */
+            width: 46.5%; /* Adjust width as needed */
             float: left;
             height: 325px;
         }
@@ -19,8 +19,8 @@
             background-color: #567c9b;
             border: 10px solid #363641;
             padding: 10px;
-            margin-left: 44%;
-            width: 50%;
+            margin-left: 51%;
+            width: 46%;
         }
 
         .aboutme {
@@ -52,7 +52,6 @@
             font-size: x-large;
         }
         .subs {
-            padding: 10px;
             width: auto;
             height: auto;
             padding: 10px;
@@ -73,8 +72,8 @@
             <h2><b>What is this site?</b></h2>
             <p>This project is made by me (thecircuitkid) to learn html and frontend development. I also just want to be able to show off and try make something good. Please look around and interact with my inputs. :3</p>
             <br><br><br>
-            <h2 style = "font-size: medium;">What's your faveourite tv show!</h2>
-            <form name = "data collection" netlify>
+            <h2 style = "font-size: medium;">What's your favourite tv show!</h2>
+            <form action="formsubs.php" method="GET">
                 <label for "tvshow">Answer:</label><br>
                 <input type = "text" id = "tvshow" name = "tvshow"><br>
                 <input type = "submit" value = "Submit">
@@ -96,18 +95,17 @@
                 <input type="submit" value="Submit">
             </form>
         </div>
-<!--    </section><br><br><br>
+    </section><br><br><br>
     <centre>
         <div class = "aboutsub">
-            <h2>
-                About Me:
+            <h2 id = "javadump">
+                
             </h2>
         </div>
-    </centre><br><br><br><br>-->
-    <br><br><div class ="aboutme">
-        <h2 id = "whatshouldbehere"></h2>
+    </centre><br><br><br><br>
+    <div class ="aboutme">
         <script>
-            document.getElementById("wahtshouldbehere").innerHTML = "JavaScript Test Box";
+            document.getElementById("javadump").innerText = "JavaScript Test Box:";
             document.write(999 + 2);
         </script>
         <button type = "button" onclick = "alert(`BOO!      Did I scare you?`)">Click me!</button>
