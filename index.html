@@ -61,7 +61,15 @@
             text-align: center;
         }
     </style>
-
+    <script>
+        function donttouch() {
+            document.getElementById("handhold").innerHTML = "Dont touch me...";
+            setTimeout(holdyourhand, 5000);
+        }
+        function holdyourhand() {
+            document.getElementById("handhold").innerHTML = "I'm gonna hold your hand when I say this.";
+        }
+    </script>
 </head>
 <body style="background-color:#040018;">
     <div class = "subs">
@@ -106,12 +114,10 @@
     <div class ="aboutme">
         <script>
             document.getElementById("javadump").innerText = "JavaScript Test Box:";
-            function holdyourhand() {
-                document.getElementById("handhold").innerHTML = "Dont touch me..."
-            }
+
         </script>
         <button type = "button" onclick = "alert(`BOO!      Did I scare you?`)">Click me!</button>
-        <button type = "button" onclick="holdyourhand()" id = "handhold">"I'm gonna hold your hand when I say this."</button>
+        <button type = "button" onmouseover="donttouch()" id = "handhold">I'm gonna hold your hand when I say this.</button>
     </div>
 
 
