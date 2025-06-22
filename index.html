@@ -62,13 +62,20 @@
         }
     </style>
     <script>
+        let clickmex = 0;
         function donttouch() {
             document.getElementById("handhold").innerHTML = "Dont touch me...";
-            setTimeout(holdyourhand, 5000);
+            setTimeout(holdyourhand, 2500); // Wait 2.5 seconds before changing the text
         }
         function holdyourhand() {
             document.getElementById("handhold").innerHTML = "I'm gonna hold your hand when I say this.";
         }
+
+        function clickme() {
+            clickmex++;
+            document.getElementById("clickmeoutput").innerText = "You have clicked me " + clickmex + " times.";
+        }
+
     </script>
 </head>
 <body style="background-color:#040018;">
@@ -116,8 +123,9 @@
             document.getElementById("javadump").innerText = "JavaScript Test Box:";
 
         </script>
-        <button type = "button" onclick = "alert(`BOO!      Did I scare you?`)">Click me!</button>
-        <button type = "button" onmouseover="donttouch()" id = "handhold">I'm gonna hold your hand when I say this.</button>
+        <button type = "button" onclick = "alert(`BOO!      Did I scare you?`)">Click me!</button><br>
+        <button type = "button" onmouseover = "donttouch()" id = "handhold">I'm gonna hold your hand when I say this.</button><br>
+        <button type = "button" onclick = "clickme()" id = "clickmeoutput">You have clicked me 0 times.</button>
     </div>
 
 
