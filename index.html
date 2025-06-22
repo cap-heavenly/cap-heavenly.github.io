@@ -62,7 +62,11 @@
         }
     </style>
     <script>
-        let clickmex = 0;
+        let scores = [
+            score = 0,
+            clickmex = 0
+        ]
+        let clickmeoutput = document.getElementById("clickmeoutput");
         function donttouch() {
             document.getElementById("handhold").innerHTML = "Dont touch me...";
             setTimeout(holdyourhand, 2500); // Wait 2.5 seconds before changing the text
@@ -71,9 +75,10 @@
             document.getElementById("handhold").innerHTML = "I'm gonna hold your hand when I say this.";
         }
 
-        function clickme() {
-            clickmex++;
-            document.getElementById("clickmeoutput").innerText = "You have clicked me " + clickmex + " times.";
+        function clickme(scorename, whichscore) {
+            scores[scorename]++;
+            scorename = scores[scorename];
+            document.getElementById(whichscore).innerText = scorename;
         }
 
     </script>
@@ -111,6 +116,17 @@
             </form>
         </div>
     </section><br><br><br>
+    // game 
+        <centre>
+        <div class = "aboutsub">
+            <h2>
+                Clicker
+            </h2>
+        </div>
+    </centre><br><br>
+    <div class ="aboutme">
+
+    </div><br><br>
     <centre>
         <div class = "aboutsub">
             <h2 id = "javadump">
@@ -125,7 +141,7 @@
         </script>
         <button type = "button" onclick = "alert(`BOO!      Did I scare you?`)">Click me!</button><br>
         <button type = "button" onmouseover = "donttouch()" id = "handhold">I'm gonna hold your hand when I say this.</button><br>
-        <button type = "button" onclick = "clickme()" id = "clickmeoutput">You have clicked me 0 times.</button>
+        <button type = "button" onclick = "clickme(clickmex, clickmeoutput)" id = "clickmeoutput">0</button>
     </div>
 
 
