@@ -102,13 +102,16 @@
                 
             </h2>
         </div>
-    </centre><br><br><br><br>
+    </centre><br><br>
     <div class ="aboutme">
         <script>
             document.getElementById("javadump").innerText = "JavaScript Test Box:";
-            document.write(999 + 2);
+            function holdyourhand() {
+                document.getElementById("handhold").innerHTML = "Dont touch me..."
+            }
         </script>
         <button type = "button" onclick = "alert(`BOO!      Did I scare you?`)">Click me!</button>
+        <button type = "button" onclick="holdyourhand()" id = "handhold">"I'm gonna hold your hand when I say this."</button>
     </div>
 
 
