@@ -87,6 +87,10 @@
             score *= amount;
             document.getElementById("clickergameaddscore").innerText = "You score is: " + Number.parseFloat(score.toFixed(9)); // Update the button text with the score
         }
+        function clickergameaddscorepersec(amount) {
+            addpersec += amount;
+            document.getElementById("clickergamescorepersec").innerText = addpersec + "/sec"; // Update the button text with the score per second
+        }
         function mainintervalfunc() {
             maininterval = setInterval(function () {clickergameaddscore(addpersec)}, 1000); //adds the current per second rate})
         }
@@ -94,7 +98,7 @@
         function AutomaticClicker() {
             if (score >= 10) {
                 clickergameaddscore(-10); // Deduct 10 points for the auto clicker
-                addpersec += 0.1; // Click every second
+                clickergameaddscorepersec(0.1) // Click every second
             }
             else {
                 alert("You don't have enough points for the auto clicker! You need at least 10 points.");
@@ -165,8 +169,9 @@
         </div>
     </centre><br><br>
     <div class ="aboutme">
-        <button type = "button" id = "clickergameaddscore" onclick = "clickergameaddscore(1)">Your score is 0</button>
-        <h4>Shop:</h4>
+        <button type = "button" id = "clickergameaddscore" onclick = "clickergameaddscore(1)">Your score is 0</button><br>
+        <button type = "button" id = "clickergamescorepersec" onclick = "alert('You score per second is: ' + addpersec + '/sec')">0/sec</button><br>
+        <h3 style = "font-weight: bolder;">Upgrades:</h3>
         <button type = "button" onclick = "alert('Increases score by 0.1/s')">Auto Clicker | Cost: 10</button><button type = "button" onclick = "AutomaticClicker()" >Buy</button><br>
         <button type = "button" onclick = "alert('Multiplies your score by 1.1 once')">Rounding error | Cost: 150</button><button type = "button" onclick = "RoundingError()">Buy</button>
     </div><br><br>
