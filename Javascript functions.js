@@ -17,6 +17,18 @@ function donttouch() {
 function holdyourhand() {
     document.getElementById("handhold").innerHTML = "I'm gonna hold your hand when I say this.";
 }
+
+// Function for growing image
+function seb(mode) {
+    if (mode == "grow") {
+        document.getElementById("seb").width = "100";
+        document.getElementById("seb").height = "130";} 
+    else {
+        document.getElementById("seb").width = "50";
+        document.getElementById("seb").height = "65";}
+}
+
+
 // Functions for clicker game structure
 function clickergameaddscore(amount) {
     score += amount;
