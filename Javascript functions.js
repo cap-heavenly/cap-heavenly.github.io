@@ -4,6 +4,7 @@ function testfunction() {
 score = 0;
 clickmex = 0;
 addpersec = 0;
+sebsize = 1;
 
 // Functions for java dump
 function clickme() {
@@ -19,24 +20,32 @@ function holdyourhand() {
 }
 
 // Function for growing image
-function seb(mode) {
+function seb(mode, x) {
     if (mode == "grow") {
-        document.getElementById("seb").width = "100";
-        document.getElementById("seb").height = "130";} 
+        sebsize += 0.01;
+        orginwidth = parseInt(x.style.width,10);
+        orginheight = parseInt(x.style.height,10);
+        sebwidth = orginwidth + sebsize;
+        sebheight = orginheight + sebsize;
+        x.style.width = sebwidth + "px";
+        x.style.height = sebheight + "px";
+        console.log("sebwidth: " + sebwidth + " sebheight: " + sebheight);
+        console.log(x.style.width + " " + x.style.height);
+    }
     else {
-        document.getElementById("seb").width = "50";
-        document.getElementById("seb").height = "65";}
+        x.style.width = 50 + "px";
+        x.style.height = 65 + "px";}
 }
 
 
 // Functions for clicker game structure
 function clickergameaddscore(amount) {
     score += amount;
-    document.getElementById("clickergameaddscore").innerText = "You score is: " + Number.parseFloat(score.toFixed(9)); // Update the button text with the score
+    document.getElementById("clickergameaddscore").innerText = "Your score is: " + Number.parseFloat(score.toFixed(9)); // Update the button text with the score
 }
 function clickergametimesscore(amount) {
     score *= amount;
-    document.getElementById("clickergameaddscore").innerText = "You score is: " + Number.parseFloat(score.toFixed(9)); // Update the button text with the score
+    document.getElementById("clickergameaddscore").innerText = "Your score is: " + Number.parseFloat(score.toFixed(9)); // Update the button text with the score
 }
 function clickergameaddscorepersec(amount) {
     addpersec += amount;
