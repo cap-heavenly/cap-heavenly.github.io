@@ -22,15 +22,19 @@ function holdyourhand() {
 // Function for growing image
 function seb(mode, x) {
     if (mode == "grow") {
-        sebsize += 0.01;
-        orginwidth = parseInt(x.style.width,10);
-        orginheight = parseInt(x.style.height,10);
-        sebwidth = orginwidth + sebsize;
-        sebheight = orginheight + sebsize;
-        x.style.width = sebwidth + "px";
-        x.style.height = sebheight + "px";
-        console.log("sebwidth: " + sebwidth + " sebheight: " + sebheight);
-        console.log(x.style.width + " " + x.style.height);
+        console.log("activated")
+        if (parseInt(x.style.width, 10) <= 500) {
+            sebsize += 0.001;
+            sebwidth = parseInt(x.style.width,10) + sebsize;
+            sebheight = parseInt(x.style.height,10) + sebsize;
+            x.style.width = sebwidth + "px";
+            x.style.height = sebheight + "px";
+            console.log("sebwidth: " + sebwidth + " sebheight: " + sebheight);
+            console.log(x.style.width + " " + x.style.height);
+        }
+        else {
+            x.style.src ="Assets/sebby.png"
+        }
     }
     else {
         x.style.width = 50 + "px";
