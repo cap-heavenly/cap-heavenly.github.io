@@ -1,2 +1,2 @@
-https://ferfem.netlify.app/index.html
-https://cap-heavenly.github.io/index.html
+https://www.ferfem.netlify.app/index.html
+https://www.cap-heavenly.github.io/index.html
