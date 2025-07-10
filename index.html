@@ -62,7 +62,7 @@
         }
         </style>
 
-<script src = "Javascript functions.js"></script>
+<script src = "mainpage.js"></script>
 </head>
 <body onload = "onloadfuncs()" style="background-color:#040018;">
     <div class = "subs">
@@ -74,10 +74,10 @@
             <p>This project is made by me (thecircuitkid) to learn html and frontend development. I also just want to be able to show off and try make something good. Please look around and interact with my inputs. :3</p>
             <br><br><br>
             <h2 style = "font-size: medium;">What's your favourite tv show!</h2>
-            <form action="formsubs.php" method="GET">
+            <form>
                 <label for "tvshow">Answer:</label><br>
                 <input type = "text" id = "tvshow" name = "tvshow"><br>
-                <input type = "submit" value = "Submit">
+                <input type = "button" value = "Submit" onclick="formtofile(this, 'Formsubs/favouritetvshow.json')">
             </form>
         </div>
         
@@ -101,28 +101,8 @@
     
     
     
-    // game 
-    <centre>
-        <div class = "aboutsub">
-            <h2>
-                Clicker
-            </h2>
-        </div>
-    </centre><br><br>
-    <div class ="aboutme">
-        <button type = "button" id = "clickergameaddscore" onclick = "clickergameaddscore(1)">Your score is 0</button><br>
-        <button type = "button" id = "clickergamescorepersec" onclick = "alert('You score per second is: ' + addpersec + '/sec')">0/sec</button><br>
-        <h3 style = "font-weight: bolder;">Upgrades:</h3>
-        <button type = "button" onclick = "alert('Increases score by 0.1/s')">Auto Clicker | Cost: 10</button><button type = "button" onclick = "AutomaticClicker()" >Buy</button><br>
-        <button type = "button" onclick = "alert('Multiplies your score by 1.1 once')">Rounding error | Cost: 150</button><button type = "button" onclick = "RoundingError()">Buy</button>
-    </div><br><br>
-    
-    
-    
-    
-    
-    
-    
+
+
     <centre>
         <div class = "aboutsub">
             <h2 id = "javadump">
@@ -139,6 +119,7 @@
         <button type = "button" onmouseover = "donttouch()" id = "handhold">I'm gonna hold your hand when I say this.</button><br>
         <button type = "button" onclick = "clickme(clickmex, clickmeoutput)" id = "clickmeoutput">0</button><br>
         <button type = "button" onclick = "testfunction()">Check the console</button><br>
+        <button type = "button" onclick = "testing()">dodododdodo</button><br>
         <img src ="Assets/sebby.jpg" style = "width:50px;height:65px" onmousemove="seb('grow', this)" onmouseout="seb('nogrow', this)" id = "seb"><br>
     </div>
     
