@@ -1,42 +1,9 @@
+
 function testfunction() {
     console.log("test");
 }
-score = 0;
-clickmex = 0;
-addpersec = 0;
-sebsize = 1;
-
-// Functions for java dump
-function clickme() {
-    clickmex++;
-    document.getElementById("clickmeoutput").innerText = clickmex;
-}
-function donttouch() {
-    document.getElementById("handhold").innerHTML = "Dont touch me...";
-    setTimeout(holdyourhand, 2500); // Wait 2.5 seconds before changing the text
-}
-function holdyourhand() {
-    document.getElementById("handhold").innerHTML = "I'm gonna hold your hand when I say this.";
-}
-
-// Function for growing image
-function seb(mode, x) {
-    if (mode == "grow") {
-        sebsize += 0.01;
-        orginwidth = parseInt(x.style.width,10);
-        orginheight = parseInt(x.style.height,10);
-        sebwidth = orginwidth + sebsize;
-        sebheight = orginheight + sebsize;
-        x.style.width = sebwidth + "px";
-        x.style.height = sebheight + "px";
-        console.log("sebwidth: " + sebwidth + " sebheight: " + sebheight);
-        console.log(x.style.width + " " + x.style.height);
-    }
-    else {
-        x.style.width = 50 + "px";
-        x.style.height = 65 + "px";}
-}
-
+let score = 0;
+let addpersec = 0;
 
 // Functions for clicker game structure
 function clickergameaddscore(amount) {
@@ -74,9 +41,4 @@ function RoundingError() {
         alert("You don't have enough points for the Rounding Error! You need at least 150 points.");
         return;
     }
-}
-
-// Function to run when the page loads
-function onloadfuncs() {
-    mainintervalfunc(); // Start the main interval function when the page loads
 }

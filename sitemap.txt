@@ -1,2 +1,9 @@
 https://www.ferfem.netlify.app/
 https://www.ferfem.netlify.app/index.html
+https://www.ferfem.netlify.app/Subpages/
+https://www.ferfem.netlify.app/Subpages//Games/
+https://www.ferfem.netlify.app/Subpages/Games/Clicker/
+https://www.ferfem.netlify.app/Subpages/Games/Clicker/clicker.html
+https://www.ferfem.netlify.app/Subpages/Games/Clicker/clicker.js
+https://www.ferfem.netlify.app/Assets/
+https://www.ferfem.netlify.app/index.html
