@@ -4,7 +4,8 @@ function testfunction() {
 }
 
 let clickmex = 0;
-let sebsize = 1;
+let gendersize = 1;
+
 
 
 // Functions for java dump
@@ -21,42 +22,34 @@ function donttouch() {
 }
 
 
+
 // Function for growing image
-function seb(mode, x) {
+function gender(mode, x) {
     if (mode == "grow") {
         console.log("activated")
-        if (parseInt(x.style.width, 10) <= 500) {
-            sebsize += 0.001;
-            sebwidth = parseInt(x.style.width,10) + sebsize;
-            sebheight = parseInt(x.style.height,10) + sebsize;
-            x.style.width = sebwidth + "px";
-            x.style.height = sebheight + "px";
-            console.log("sebwidth: " + sebwidth + " sebheight: " + sebheight);
-            console.log(x.style.width + " " + x.style.height);
+        if (parseInt(x.style.width, 10) <= 250) {
+            gendersize += 0.001;
+            genderwidth = parseInt(x.style.width,10) + gendersize;
+            genderheight = parseInt(x.style.height,10) + gendersize;
+            x.style.width = genderwidth + "px";
+            x.style.height = genderheight + "px";
+            console.log("genderwidth: " + genderwidth + " genderheight: " + genderheight);
+            console.log(x.style.width + "   " + x.style.height);
         }
         else {
-            x.src = "Assets/sebby.png";
+            x.src = "Assets/blowup.png";
         }
     }
     else {
-        x.style.width = 50 + "px";
-        x.style.height = 65 + "px";
-        x.src = "Assets/sebby.jpg";
+        x.style.width = 65 + "px";
+        x.style.height = 36 + "px";
+        x.src = "Assets/nicegender.png";
     }
 }
 
 
-function formtofile(form, file) {
-    open(file, "a", (err) => {
-        if (err) throw err;
-        text = "";
-        for (i=0; i<form.length; i++){text += x.elements[i].value + "\n"}
-        appendFile(text);
-    })
-}
-function testing() {
-    appendFile("Formsubs/favouritetvshow.txt", "test", utf8);
-}
+
+
 // Function to run when the page loads
 function onloadfuncs() {
     mainintervalfunc(); // Start the main interval function when the page loads
