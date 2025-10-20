@@ -52,5 +52,6 @@ function gender(mode, x) {
 
 // Function to run when the page loads
 function onloadfuncs() {
+    alert("IMPORTANT!!!! The evil IT admins have managed to block the embedded games I was using. I apologise and I am trying my best to find workarounds.")
     mainintervalfunc(); // Start the main interval function when the page loads
 }
