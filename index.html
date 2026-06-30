@@ -20,29 +20,32 @@
             
         }
         .intro {
-            background-color: #567c9b;
-            border: 10px solid #363641;
+            background-color: #cccccc;
+            border: 10px solid #567c9b;
             padding: 10px;
             width: 46.5%; /* Adjust width as needed */
             float: left;
             height: 325px;
+            border-radius: 50px;
         }
     
         .forms {
-            background-color: #567c9b;
-            border: 10px solid #363641;
+            background-color: #cccccc;
+            border: 10px solid #567c9b;
             padding: 10px;
             margin-left: 51%;
             width: 46%;
             height: 325px;
+            border-radius: 50px;
         }
 
         .aboutme {
-            background-color: #567c9b;
-            border: 10px solid #363641;
+            background-color: #ffffff;
+            border: 10px solid #567c9b;
             padding: 10px;
             width: auto;
-            height: 600px;
+            height: auto;
+            border-radius: 50px;
         }
         
         .container {
@@ -56,7 +59,7 @@
             width: auto;
             height: auto;
             padding: 30px;
-            border: 10px solid #25252c;
+            border: 10px solid #567c9b;
             background-image: url(Assets/istockphoto-1266607345-612x612.jpg);
             margin: auto;
             text-align: center;
@@ -64,18 +67,20 @@
             text-decoration: wavy;
             color: #ffffff;
             font-size: x-large;
+            border-radius: 50px;
         }
         .subs {
             width: 97%;
             height: auto;
             padding: 10px;
-            border: 10px solid #25252c;
+            border: 10px solid #567c9b;
             background-color: #2c6797;
             margin: auto;
             text-align: center;
             position: sticky;
             top: 0;
             margin-top: 10px;
+            border-radius: 50px;
         }
 
         .buttonstitle {
@@ -111,7 +116,7 @@
     <section class = "container">
         <div class = "intro">
             <h2><b>What is this site?</b></h2>
-            <p>This project is made by me, Charlie(she/they), to learn html, js, css and frontend development. I also just want to be able to show off and try make something good. Please look around, play games, press buttons and have fun!!</p>
+            <p>This project is made by me (Charlie) to learn html, js, css and frontend development. I also just want to be able to show off and try make something good. Please look around, play games, press buttons and have fun!!</p>
             <br><br><br>
             <p><b>If you have any suggestions and/or need to report a bug, use the github page (<a href src = "https://github.com/cap-heavenly/cap-heavenly.github.io/issues">here</a>) to report an issue. You can also just message me via discord (@thecircuitkid) if you just wanna chat.</b></p>
             <br><br><br>
@@ -144,12 +149,20 @@
         <button type = "button" style = "left: 20%; position: relative;" onmouseover = "donttouch()" id = "handhold">I'm gonna hold your hand when I say this.</button>
         <button type = "button" style = "left: 60%; position: absolute;" onclick = "clickme(clickmex, clickmeoutput)" id = "clickmeoutput">0</button>
         <button type = "button" style = "left: 80%; position: absolute;" onclick = "testfunction()">Check the console</button><br>
-        <img src = "Assets/pinkdiv.gif" style = "width: 100%;height: 6px; position: relative;"><br><br>
+        <img src = "Assets/bluedivider.gif" style = "width: 100%;height: 40px; position: relative;"><br><br>
         <img src = "Assets/IMAGES.png" style = "width: 198px;height: 49px;left: 43%; position: relative;" onmouseenter = "this.src='Assets/IMAGESHOVER.png'" onmouseleave="this.src='Assets/IMAGES.png'"><br><br>
-        <img src ="Assets/nicegender.png" style = "width:65px;height:36px" onmousemove="gender('grow', this)" onmouseout="gender('nogrow', this)" id = "gender"><img src ="Assets/beetle.png" class = "beetle"><br>
-        <img src = "Assets/pinkdiv.gif" style = "width: 100%;height: 6px; position: relative;"><br><br>
+        <img src ="Assets/bomb.png" style = "width:78px;height:56px" onmousemove="gender('grow', this)" onmouseout="gender('nogrow', this)" id = "gender"><img src ="Assets/beetle.png" class = "beetle"><br>
+        <img src = "Assets/bluedivider.gif" style = "width: 100%;height: 40px; position: relative;"><br><br>
+    </div><br><br>
+    
+    <div class = "aboutsub">
+        <h2>Python Projects</h2>
+    </div><br><br>
+    <div class = "aboutme">
+        <a href="imagereading"><h3>Simple Image-to-ASCII</h3></a>
+        <p>A program that allows you to choose from images or use your own and turn it into ASCII</p>
+        <a href="Classism"><h3>Account System</h3></a>
+        <p>A program that allows you to create, edit, log into and sign out of accounts. Logs into the latest account logged into.</p>
     </div>
-    
-    
 </body>
 </html>

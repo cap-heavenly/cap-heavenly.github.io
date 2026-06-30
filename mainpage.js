@@ -1,6 +1,6 @@
 
 function testfunction() {
-    console.log("test");
+    console.log("Made you look!!");
 }
 
 let clickmex = 0;
@@ -43,7 +43,7 @@ function gender(mode, x) {
     else {
         x.style.width = 65 + "px";
         x.style.height = 36 + "px";
-        x.src = "Assets/nicegender.png";
+        x.src = "Assets/bomb.png";
     }
 }
 
